@@ -150,7 +150,7 @@ class NotFound extends React.PureComponent { // eslint-disable-line react/prefer
       this.intervalTime = setInterval(() => {
         const backward = this.state.backward - 1;
         if (backward > -1) this.setState({ backward });
-        else browserHistory.push('/home');
+        else browserHistory.push('/');
       }, 1000);
     });
   }

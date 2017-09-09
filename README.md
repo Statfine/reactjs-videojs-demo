@@ -32,4 +32,4 @@ npm install
 <br />
 npm start
 <br />
-http://localhost:9999/home
+http://localhost:9999

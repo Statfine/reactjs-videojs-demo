@@ -23,7 +23,7 @@ export function* requestUserInfo() {
       yield put(userinfoRequestSuccess(userInfo));
       localStorage.setItem('user_type', userInfo.policy.user_type);
       if (browserHistory.getCurrentLocation().pathname === '/') {
-        yield put(push('/home'));
+        yield put(push('/'));
       }
     } catch (error) {
       const msg = error.message ? error.message : error;
