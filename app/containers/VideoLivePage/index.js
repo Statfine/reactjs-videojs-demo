@@ -15,6 +15,15 @@ export default class VideLivePage extends PureComponent {
   }
 
   componentDidMount() {
+    this.playLive = new prismplayer({ // eslint-disable-line
+      id: 'video', // 容器id
+      autoplay: true,      // 自动播放
+      source: 'http://wb-ali-pull.v.momocdn.com/momo/m_9187aa4c44de8d0015057117517401.flv?r=21ab6c616fa30875',         // 视频url 支持互联网可直接访问的视频地址
+      width: '560px',       // 播放器宽度
+      height: '316px',      // 播放器高度
+    });
+
+
     /*
      * 此时用的是全局引入 并注释了webapck中的videojs
      * 若用npm包 需打开webapck中的videojs，
@@ -110,6 +119,7 @@ export default class VideLivePage extends PureComponent {
     const { showVideo } = this.state;
     return (
       <div>
+        <div id="video"></div>
         { showVideo && <div onClick={() => this.hideVideo()}>hideVideo</div>}
         {
           showVideo ?
