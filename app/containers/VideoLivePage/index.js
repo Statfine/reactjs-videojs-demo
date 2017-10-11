@@ -18,7 +18,7 @@ export default class VideLivePage extends PureComponent {
     this.playLive = new prismplayer({ // eslint-disable-line
       id: 'video', // 容器id
       autoplay: true,      // 自动播放
-      source: 'http://wb-ali-pull.v.momocdn.com/momo/m_9187aa4c44de8d0015057117517401.flv?r=21ab6c616fa30875',         // 视频url 支持互联网可直接访问的视频地址
+      source: 'rtmp://120.26.6.217/live/livestream',         // 视频url 支持互联网可直接访问的视频地址
       width: '560px',       // 播放器宽度
       height: '316px',      // 播放器高度
     });
@@ -62,7 +62,7 @@ export default class VideLivePage extends PureComponent {
       autoplay: true,
       preload: 'metadata',
       sources: [{
-        src: 'rtmp://live.hkstv.hk.lxdns.com/live/hks',
+        src: 'rtmp://120.26.6.217/live/livestream',
         type: 'rtmp/flv',
       }],
       height: 300,
