@@ -6,6 +6,8 @@ import React, { PureComponent } from 'react';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.min.css';
 
+// rtmp://live.hkstv.hk.lxdns.com/live/hks
+// http://acm.gg/jade.m3u8
 export default class VidePage extends PureComponent {
 
   componentDidMount() {
